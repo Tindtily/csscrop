@@ -11,6 +11,15 @@ font-family: sans-serif;
 padding: 10px;
 background-color: #8da7cc ;
 }
+.left {
+float: left;
+}
+input[type="text"] {
+width: 205px;
+}
+input[type="radio"] {
+width: 25px;
+}
 textarea#css,
 input#source {
 width: 99%;
@@ -98,15 +107,18 @@ function clearCoords() {
   </fieldset>
   <fieldset id="selectionsize">
     <legend>selectionsize</legend>
-    <input type="text" id="x" / > x
-    <input type="text" id="y" /><br />
+    <div class="left" >
+    <input type="text" id="x" / > <br />
     <input type="radio" name="x" value="100" />100
     <input type="radio" name="x" value="200" />200
-    <input type="radio" name="x" value="300" />300 x
-    <input type="radio" name="y" value="100" />100  
-    <input type="radio" name="y" value="200" />200
-    <input type="radio" name="y" value="300" />300
-    
+    <input type="radio" name="x" value="300" />300
+    </div>
+    <div>
+        <input type="text" id="y" /><br />
+        <input type="radio" name="y" value="100" />100
+        <input type="radio" name="y" value="200" />200
+        <input type="radio" name="y" value="300" />300
+    </div>
   </fieldset>
   
   <br />
